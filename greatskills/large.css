@@ -1,0 +1,25 @@
+@media only screen and (min-width: 60rem) {
+
+    header, main, footer {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+    .assignments {
+        column-count: 3;
+    }
+
+    .logo {
+    width: 50px;  
+    height: auto;   
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+footer {
+  text-align: center;
+}
+
+} /* end media query*/

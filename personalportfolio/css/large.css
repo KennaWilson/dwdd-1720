@@ -1,0 +1,18 @@
+@media only screen and (min-width: 60rem) {
+
+
+
+section#about h1 {
+    font-size: 5rem;
+}
+
+section#about h2 {
+    font-size: 3rem;
+    color: black;
+}
+
+div.theParent a {
+    flex-basis: 33.33%;
+}
+
+} /* end media query*/

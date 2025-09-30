@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Serif+Display&family=Onest:wght@100..900&display=swap"rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png">
+
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Paint and Flooring Calculator</h1>
+    </header>
+    <main>
+        <div class="data">
+            <label>Room Width <input type="number" id="width" value="15"> feet</label>
+            <label>Room Depth <input type="number" id="depth" value="10"> feet</label>
+            <label>Wall Height <input type="number" id="height" value="8"> feet</label>
+            Paint Quality <select id="quality">
+                <option value="" disabled selected>Select a Paint</option>
+                <option value="600">Premium</option>
+                <option value="500">Standard</option>
+                <option value="400">Economy</option>
+            </select>
+            <button id="calculate">Calculate</button>
+        </div>
+
+        <section>
+            <div>
+                <h2>Paint Supplies</h2>
+                <ul id="paint"></ul>
+            </div>
+            <div>
+                <h2>Carpet Supplies</h2>
+                <ul id="carpet"></ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;McKenna Wilson &bull; Project for Scripting</p>
+    </footer>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

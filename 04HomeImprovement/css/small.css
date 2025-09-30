@@ -1,0 +1,77 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+    font-family: 'Inter', sans-serif;
+    --primaryColor: #f67280;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0; 
+    padding: 1rem 2%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+}
+
+.data {
+    margin: 1rem 4%; 
+    padding: 1rem 4%;
+    background-color: #355c7d;
+    border-radius: 20px;
+    box-shadow: 0 0 6px #355c7d;
+}
+
+.data label {
+    display: block; 
+    margin: .5rem 0;
+}
+
+.data input {width:60px;}
+.data button {
+    width: 100%;
+    padding: .5rem 0;
+    margin: 1rem 0;
+    background: #6c5b7b;
+    background: linear-gradient#6c5b7b;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px #777;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+section {
+    display: flex;
+    flex-wrap:wrap; 
+}
+
+section div {
+    margin: 1rem 4%;
+    flex-basis: 96%;
+    background-color: #f8b195;
+    border-radius: 0 0 10px 10px;
+}
+
+section div h2 {
+    margin: 0; 
+    padding: .5rem 0;
+    background-color: #6c5b7b;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+section ul {list-style-type:circle;}
+
+footer {
+    background-color: var(--primaryColor);
+    padding: 1rem 2%;
+    color: white;
+    text-align:center;
+}

@@ -1,0 +1,67 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#cards {
+    display: flex; 
+    flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff0f0; 
+  padding: 2rem;
+  gap: 2rem;
+}
+
+
+#cards figure {
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 1rem;
+  flex-basis: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+#cards figure:hover {
+  transform: translateY(-5px);
+}
+
+#cards figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#cards image {
+    width: 100%;
+}
+
+#cards figure h2,
+#cards figure figcaption {
+  color: #0033cc; 
+  font-family: 'Georgia', serif;
+}
+
+#cards figure h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#cards figure figcaption {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+header {
+  font-size: 2.5rem;         
+  color: #8B0000;           
+  font-weight: bold;
+  text-align: center;        
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Georgia', serif; 
+}

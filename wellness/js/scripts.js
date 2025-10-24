@@ -1,38 +1,67 @@
 const saveBtn = document.querySelector('#saveProfile');
-
-saveBtn.addEventListener('click', () => {
-    let fn = document.querySelector('input[name="first"]');
-    localStorage.setItem('wellness-first',fn.value)
-       let ln = document.querySelector('input[name="last"]');
-    localStorage.setItem('wellness-last',ln.value)
-    let select = document.querySelector('#physical');
-    let et = select.options[select.selectedIndex].text;
-    localStorage.setItem('wellness-emoji', et)
-})
-
 const deleteBtn = document.querySelector('#deleteProfile');
+
+saveBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const fn = document.querySelector('input[name="first"]').value.trim();
+    const ln = document.querySelector('input[name="last"]').value.trim();
+    const select = document.querySelector('#physical');
+    const emojiURL = select.value; 
+    const emotionText = select.options[select.selectedIndex].text; 
+
+   
+    localStorage.setItem('wellness-first', fn);
+    localStorage.setItem('wellness-last', ln);
+    localStorage.setItem('wellness-emoji', emojiURL);
+    localStorage.setItem('wellness-text', emotionText);
+
+    
+    updateProfileDisplay();
+});
+
+
 deleteBtn.addEventListener('click', () => {
     localStorage.removeItem('wellness-first');
     localStorage.removeItem('wellness-last');
     localStorage.removeItem('wellness-emoji');
     localStorage.removeItem('wellness-text');
-    location.reload();
-})
+    updateProfileDisplay();
+});
 
-const check = localStorage.getItem('wellness-first')
-console.log(check);
-if (check === null) {
-    document.querySelector('#newProfile').className = 'showMe'
-    document.querySelector('#myProfile').className = 'hideMe'
-// do nothing
-}else{
- document.querySelector('#newProfile').className = 'hideMe'
- document.querySelector('#myProfile').className = 'showMe'
- document.querySelector('#first').textContent = localStorage.getItem('wellness-first');
- document.querySelector('#last').textContent = localStorage.getItem('wellness-last');
- document.querySelector('#emotion').textContent = localStorage.getItem('wellness-text');
- document.querySelector('#emoji').src = localStorage.getItem('wellness-emoji');
+
+function updateProfileDisplay() {
+    const first = localStorage.getItem('wellness-first');
+    const last = localStorage.getItem('wellness-last');
+    const emoji = localStorage.getItem('wellness-emoji');
+    const emotion = localStorage.getItem('wellness-text');
+
+    const newProfile = document.querySelector('#newProfile');
+    const myProfile = document.querySelector('#myProfile');
+
+    if (first && last && emoji && emotion) {
+      
+        newProfile.className = 'hideMe';
+        myProfile.className = 'showMe';
+
+        
+        document.querySelector('#first').textContent = first;
+        document.querySelector('#last').textContent = last;
+        document.querySelector('#emotion').textContent = emotion;
+        document.querySelector('#emoji').src = emoji;
+        document.querySelector('#emoji').alt = emotion + ' emoji';
+    } else {
+        
+        newProfile.className = 'showMe';
+        myProfile.className = 'hideMe';
+    }
 }
+
+
+updateProfileDisplay();
+
+
+
 
 
 

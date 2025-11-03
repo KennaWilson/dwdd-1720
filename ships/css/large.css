@@ -1,0 +1,28 @@
+/* Large screens: 768px and up */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    main figure {
+        width: 80%; /* figure takes 80% of container width */
+        max-width: 1200px; /* optional limit */
+        margin: 0;
+        padding: 10px;
+    }
+
+    main figure img {
+        width: 100%;    /* scale image to figure width */
+        height: auto;   /* keep proportions */
+        display: block; /* removes extra space under image */
+    }
+
+    main figcaption {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+} /* end media query*/

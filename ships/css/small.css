@@ -1,0 +1,74 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: 'Momo Trust Display', Arial, sans-serif; /* Google Font first, fallback after */
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background.jpeg);
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav button {
+    width: 100%;
+}
+
+nav button:hover {
+    background-color: #444;    
+    color: white;             
+    cursor: pointer;         
+    transform: scale(1.05);    
+    transition: all 0.3s ease; 
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;           
+    justify-content: center;   
+    gap: 20px;                 
+    padding: 20px;             
+    background-color: rgba(0,0,0,0.3); 
+}
+
+main figure {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+main figure img {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+main figcaption {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;  
+    margin-top: 10px;  
+}
+
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+

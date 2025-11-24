@@ -1,0 +1,46 @@
+[
+  {
+    "id": "p1",
+  "name": "Aurora Ceramic Mug",
+  "price": 18.99,
+  "description": "Hand-glazed ceramic mug with a soft matte finish. 12 oz capacity, dishwasher safe.",
+  "colors": ["sea-glass", "sunrise"],
+  "tags": ["kitchen", "gift"],
+  "image": "https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "p2",
+    "name": "Personalized Framed Photos",
+    "price": 24.5,
+    "description": "Create your own masterpieces with a wide selection of frames to choose from.",
+    "wood": ["cedar", "pine", "oak"],
+    "tags": ["home", "family","gift"],
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9d3c4b2ad0e7d7d9fa8b62a40b3f2b8a"
+  },
+  {
+    "id": "p3",
+    "name": "Nomad clothing",
+    "price": 32.0,
+    "description": "Durable cotton clothing made for anyday and where.",
+    "tags": ["accessories", "travel"],
+    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1e5b1d7c9a4945e9eb4a9d2a9a9b2992"
+  },
+  {
+    "id": "p4",
+    "name": "Denim Jeans",
+    "price": 28.75,
+    "description": "Lightweight denim-blend blue jeans.",
+    "sizes": ["one-size"],
+    "tags": ["wearables", "winter","fall","summer"],
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0b2c7205123c4aa3cab9d6aa8a1f0d8c"
+  },
+  {
+    "id": "p5",
+    "name": "Original Hardcover Books",
+    "price": 14.0,
+    "description": "A wide variety of hardcover books from Jane Austin to LoveCraft. We have a wide variety of genres to choose from.",
+    "authors": ["Austin", "Dickins", "Tolkien", "Lovecraft"],
+    "tags": ["stationery", "gift"],
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop"
+  }
+]

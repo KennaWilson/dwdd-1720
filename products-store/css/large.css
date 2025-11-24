@@ -1,0 +1,49 @@
+@media only screen and (min-width: 60rem) {
+@media (min-width: 1000px) {
+  .header-inner{
+    padding:28px;
+  }
+
+  /* Nav becomes 4 columns on large screens (requirement) */
+  .product-links{
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    width:700px;
+  }
+
+  .hero{
+    height:380px;
+    border-radius:0;
+  }
+
+  .header-inner{
+    align-items:flex-end;
+  }
+
+  .store-title{
+    font-size:1.5rem;
+  }
+
+  .content{
+    padding:0 28px 72px;
+  }
+
+  /* Product detail card larger and center aligned */
+  .product-display{
+    display:flex;
+    justify-content:center;
+    padding:28px;
+  }
+
+  .product-card{
+    max-width:900px;
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .hero-overlay{
+    padding:28px;
+    border-radius:10px;
+    background:linear-gradient(90deg, rgba(0,0,0,0.38), rgba(0,0,0,0.12));
+    text-align:left;
+  }
+}
+} /* end media query*/
